@@ -17,3 +17,6 @@ USUARIOS DE PRUEBA:
 - admin / admin123 (Administrador)
 - cajero1 / cajero123 (Asesor/Cajero)
 - asociado1 / asociado123 (Asociado)
+
+VIDEO
+- https://drive.google.com/file/d/1OOfqVBwz1VqhO_bh3i9k44iR1P7386ot/view?usp=sharing
