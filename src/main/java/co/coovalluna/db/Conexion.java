@@ -1,0 +1,21 @@
+package co.coovalluna.db;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class Conexion {
+
+    private static final String URL = "jdbc:postgresql://localhost:5432/coovalluna";
+    private static final String USUARIO = "postgres";
+    private static final String CONTRASENA = "0000";
+
+    public static Connection getConexion() throws SQLException {
+        try {
+            Class.forName("org.postgresql.Driver");
+            return DriverManager.getConnection(URL, USUARIO, CONTRASENA);
+        } catch (ClassNotFoundException e) {
+            throw new SQLException("Driver PostgreSQL no encontrado", e);
+        }
+    }
+}
